@@ -18,7 +18,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Capital Reds Baseball",
   description: "Official platform for Capital Reds amateur baseball team",
-    generator: 'v0.app'
+    generator: 'capital-reds'
 }
 
 export default function RootLayout({
