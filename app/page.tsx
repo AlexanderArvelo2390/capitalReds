@@ -42,7 +42,7 @@ export default function HomePage() {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src="/images/capital-reds-logo.png"
+                  src="/images/Cincinnati_Reds-Logo-PNG4-480x270.png"
                   alt="Capital Reds Logo"
                   width={400}
                   height={400}

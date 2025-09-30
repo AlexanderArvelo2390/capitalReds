@@ -25,7 +25,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/capital-reds-logo.png"
+              src="/images/Cincinnati_Reds-Logo-PNG4-480x270.png"
               alt="Capital Reds Logo"
               width={48}
               height={48}
