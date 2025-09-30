@@ -1,7 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { DM_Sans, Space_Grotesk } from "next/font/google"
+
 import "./globals.css"
+import RedsBanner from "@/components/reds-banner"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -28,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${dmSans.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {/* Navbar aquí si existe */}
+        <RedsBanner />
+        {children}
+      </body>
     </html>
   )
 }

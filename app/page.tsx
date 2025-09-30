@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Trophy, Users, TrendingUp, Award } from "lucide-react"
 import { getTopPlayers } from "@/lib/data"
 import { Badge } from "@/components/ui/badge"
+import A3ImageCarousel from "@/components/a3-image-carousel"
 
 export default function HomePage() {
   const featuredPlayer = getTopPlayers(1)[0]
@@ -53,7 +54,15 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
+        <section className="py-10">
+          <div className="mb-6 flex flex-col items-center justify-center gap-4">
+            <h2 className="font-heading text-4xl font-bold text-primary">¡Campeones A3!</h2>
+            <div className="w-full ">
+              {/* Carrusel de imágenes A3 */}
+              <A3ImageCarousel />
+            </div>
+          </div>
+        </section>
         <section className="border-b border-border bg-muted/30 py-12">
           <div className="container mx-auto px-4">
             <div className="mb-6 flex items-center gap-2">
